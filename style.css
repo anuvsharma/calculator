@@ -12,8 +12,8 @@ main{
     align-items: center;
     padding: 10px;
     margin-top: 50px;
-    width: 400px;
-    background-color: grey;
+    width: 350px;
+    background-color: lightgrey;
     border: solid black;
     border-radius: 5%;
 }
@@ -21,8 +21,28 @@ main{
 .display{
     display: flex;
     flex-direction: column;
-    width: 220px;
+    margin-top: 10px;
+    width: 300px;
+    height: 100px;
     background-color: whitesmoke;
+    border: solid black;
+    border-radius: 5%;
+}
+
+.old-display, .current-display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.old-display{
+    flex:1;
+}
+
+.current-display{
+    flex:2;
+    font-size: 35px;
 }
 
 .buttons{
@@ -33,9 +53,9 @@ main{
     gap: 15px;
 }
 
-.button-rows{
+.number-button-rows{
     display: flex;
-    gap: 30px;
+    gap: 15px;
 }
 
 .option-button-row{
@@ -44,17 +64,26 @@ main{
 }
 
 .option-button, .number-button{
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 10%;
 }
 
 .option-button{
-    font-size: 20px;
-    padding: 0px 10px;
+    font-size: 30px;
+    padding: 15px;
 }
 
 .number-button{
     font-size: x-large;
     width: 70px;
     height: 70px;
+    background-color: rgb(89, 203, 255);
+}
+
+.number-button:hover{
+    background-color: rgb(80, 191, 243);
+}
+
+.number-button:active{
+    background-color: rgb(76, 186, 236);
 }
