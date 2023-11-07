@@ -3,31 +3,58 @@ main{
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+    background-color: bisque;
 }
 
 .calculator{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 10px;
-    width: 500px;
+    margin-top: 50px;
+    width: 400px;
+    background-color: grey;
+    border: solid black;
+    border-radius: 5%;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    background-color: whitesmoke;
 }
 
 .buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 25px 10px;
     gap: 15px;
 }
 
 .button-rows{
     display: flex;
-    justify-content: space-evenly;
-    width: 200px;
-    gap: 10px;
+    gap: 30px;
 }
 
-.calculator-button{
-    width: 50px;
-    height: 50px;
+.option-button-row{
+    display: flex;
+    gap: 30px;
+}
+
+.option-button, .number-button{
+    border: 3px solid black;
+    border-radius: 10%;
+}
+
+.option-button{
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.number-button{
+    font-size: x-large;
+    width: 70px;
+    height: 70px;
 }
