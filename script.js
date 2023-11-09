@@ -1,3 +1,12 @@
+/* 
+ADDITIONAL FEATURES POSSIBLE
+
+Make it so the decimal button is only pressed once and can't appear multiple times on the display
+
+Add keyboard support
+
+*/
+
 let firstNumber;
 let operator;
 let secondNumber;
