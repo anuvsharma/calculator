@@ -31,6 +31,9 @@ operatorButtons.forEach(function(button) {
 });
 
 equalsButton.addEventListener("click", function(){
+    if(oldDisplay.textContent==""){
+        return;
+    }
     currentDisplay.textContent = operate(oldDisplay.textContent.slice(0,-2), operator, currentDisplay.textContent);
     oldDisplay.textContent = "";
 })
@@ -116,9 +119,6 @@ function divide(a, b){
 
 function operate(firstNumber, operator, secondNumber){
     if (operator == '+'){
-/*         console.log(firstNumber);
-        console.log(operator);
-        console.log(secondNumber); */
         return add(firstNumber,secondNumber);
     }
     else if (operator == '-'){
