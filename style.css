@@ -26,7 +26,7 @@ main{
     height: 100px;
     background-color: whitesmoke;
     border: solid black;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 .old-display, .current-display{
@@ -63,9 +63,9 @@ main{
     gap: 30px;
 }
 
-.option-button, .number-button{
+.option-button, .number-button, .operator-button, .equal-button{
     border: 2px solid black;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .option-button{
@@ -73,17 +73,41 @@ main{
     padding: 15px;
 }
 
-.number-button{
+#button-clear{
+    background-color: rgb(150, 255, 150);
+}
+
+#button-clear:hover{
+    background-color: rgb(140, 238, 140);
+}
+
+#button-clear:active{
+    background-color: rgb(123, 207, 123);
+}
+
+#button-delete{
+    background-color: rgb(255, 151, 151);
+}
+
+#button-delete:hover{
+    background-color: rgb(238, 140, 140);
+}
+
+#button-delete:active{
+    background-color: rgb(211, 124, 124);
+}
+
+.number-button, .operator-button, .equal-button{
     font-size: x-large;
     width: 70px;
     height: 70px;
     background-color: rgb(89, 203, 255);
 }
 
-.number-button:hover{
+.number-button:hover, .operator-button:hover, .equal-button:hover{
     background-color: rgb(80, 191, 243);
 }
 
-.number-button:active{
+.number-button:active, .operator-button:active, .equal-button:active{
     background-color: rgb(76, 186, 236);
 }
