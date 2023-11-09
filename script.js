@@ -97,24 +97,44 @@ function setOperator(operation){
 }
 
 function add(a, b){
-    return parseFloat(a)+parseFloat(b);
+    let output = (parseFloat(a)+parseFloat(b)).toFixed(2);
+    if (output % 1 == 0){
+        return parseFloat(a)+parseFloat(b);
+    }
+    else
+    return output;
 }
 
 function subtract(a, b){
-    return parseFloat(a)-parseFloat(b);
+    let output = (parseFloat(a)-parseFloat(b)).toFixed(2);
+    if (output % 1 == 0){
+        return parseFloat(a)-parseFloat(b);
+    }
+    else
+    return output;
 }
 
 function multiply(a, b){
-    return parseFloat(a)*parseFloat(b);
+    let output = (parseFloat(a)*parseFloat(b)).toFixed(2);
+    if (output % 1 == 0){
+        return parseFloat(a)*parseFloat(b);
+    }
+    else
+    return output;
 }
 
 function divide(a, b){
+    let output = (parseFloat(a)/parseFloat(b)).toFixed(2);
     if (b == 0){
         appendDisplay("clear");
         alert("Can't divide by 0!");
         return 0;
     }
-    return parseFloat(a)/parseFloat(b);
+    else if (output % 1 == 0){
+        return parseFloat(a)/parseFloat(b);
+    }
+    else
+    return output;
 }
 
 function operate(firstNumber, operator, secondNumber){
